@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+  --body: white;
+  --text: rgb(50, 50, 50);
+  --header: black;
+  --bg: rgb(240, 240, 240);
+  --bg-darker: rgb(220, 220, 220);
+  --border: rgb(200, 200, 200);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  background: var(--body);
+}
+
+h1{font-size: 2.5rem; color: var(--header);} h2{font-size: 2rem; color: var(--header);} h3{font-size: 1.5rem; color: var(--header);} p{font-size: 1rem;}
+h1[id], h2[id], h3[id]{
+  scroll-margin-top: 5rem;
+}
+
+a{
+  color: rgb(60, 60, 255);
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+nav{
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  background: var(--bg);
+  position: sticky; position: -webkit-sticky;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav ul li a:hover{
+  background: lightgrey;
+  text-decoration: none;
+}
+
+.main{
+  margin-top: 1rem;
+  background: var(--bg);
+  width: 50rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+
+button{
+  background: rgb(240, 240, 240);
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  padding: .8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover{
+  background: var(--bg-darker);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul{
+  list-style-position: inside;
+}
+
+table{
+  background: var(--bg-darker);
+  table-layout: fixed;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+tr:nth-child(even){
+  background: var(--bg);
+}
+
+td,th{
+  padding: 0.5rem;
+  word-wrap: break-word;
+}
+
+th{
+  color: black;
+}
+
+@media (max-width: 900px){
+  .main{
+    width: calc(100% - 4rem);
+  }
+}
