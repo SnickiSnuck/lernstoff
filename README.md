@@ -1,2 +1,2 @@
-# Lernstoff
-A website for me and my classmates.
+# Compendium (ehem. Lernstoff)
+Website für Vokabeln, Grammatik und Checklisten.
