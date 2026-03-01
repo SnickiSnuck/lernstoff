@@ -5,21 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compendium</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
 </head>
 <body>
   <nav>
     <ul>
       <li><a href="./">Start</a></li>
-      <li><a href="./french">Französisch</a></li>
+      <li><a class="nav-active">Französisch</a></li>
       <li><a href="./info">Info</a></li>
     </ul>
   </nav>
-  <div class="main">
-    <h1>Französisch</h1><br>
-    <a href="./french/vocab"><button>Vokabeln</button></a>
-    <button style="opacity: 0.5;">Grammatik</button>
-    <button style="opacity: 0.5;">Verben</button>
+
+  <div class="content-column">
+    <div class="main">
+      <h1>Französisch</h1><br>
+      <div class="button-container">
+        <a href="./french/vocab"><button>Vokabeln</button></a>
+        <a href="./french/verbs"><button>Verben</button></a>
+      <button style="filter: grayscale(100%); cursor: not-allowed; opacity: 0.5;" title="Kommt irgendwann dann mal :)">Grammatik</button>
+      </div>
+    </div>
   </div>
 </body>
-
 </html>

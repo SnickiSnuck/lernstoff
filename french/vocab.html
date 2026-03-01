@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compendium</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body id="top">
   <nav>
     <ul>
       <li><a href="../">Start</a></li>
-      <li><a href="../french">Französisch</a></li>
+      <li><a href="../french" class="nav-active" style="cursor: pointer;">Französisch</a></li>
       <li><a href="../info">Info</a></li>
     </ul>
   </nav>
 
-  <div class="main">
+<div class="content-column">
+    <div class="main">
     <h1>Vokabeln</h1>
     <p>Diese Vokabeln sind direkt aus dem Buch. Sie wurden leicht angepasst, um die Verständlichkeit zu verbessern.</p>
     <h2>Inhalt</h2>
@@ -27,13 +31,16 @@
   </div>
 
   <div class="main">
+    <h2>Testmodus</h2>
+    <p>Klicke auf <button style="padding: .2rem; border-radius: 0;" onclick="toggleCover(1)">Französisch</button> oder <button style="padding: .2rem; border-radius: 0;" onclick="toggleCover(2)">Deutsch</button>, um die Vokabeln auszublenden. Du kannst auch einzelne Wörter einblenden, indem du auf das entsprechende Kästchen klickst.</p>
+  </div>
+
+  <div class="main">
     <h2 id="unit01">Unité 1 - Voc. thématique</h2>
     <p>LB. S. 178-180</p><br>
     <table>
-        <tr>
-            <th>Französisch</th>
-            <th>Deutsch</th>
-        </tr>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
         <tr>
             <td>francophone</td>
             <td>französischsprachig</td>
@@ -130,8 +137,8 @@
     <p>LB. S. 180-181</p><br>
     <table>
         <tr>
-            <th>Französisch</th>
-            <th>Deutsch</th>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
         </tr>
         <tr>
             <td>découvrir qn/qc</td>
@@ -217,8 +224,8 @@
     <p>LB. S. 182</p><br>
     <table>
         <tr>
-            <th>Französisch</th>
-            <th>Deutsch</th>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
         </tr>
         <tr>
             <td>la tradition</td>
@@ -257,7 +264,7 @@
             <td>sich amüsieren, Spaß haben</td>
         </tr>
         <tr>
-            <td>ressembler à qn/qn</td>
+            <td>ressembler à qn/qc</td>
             <td>jdm etw. schenken, jdm etw. anbieten</td>
         </tr>
         <tr>
@@ -308,8 +315,8 @@
     <p>LB. S. 183-184</p><br>
     <table>
         <tr>
-            <th>Französisch</th>
-            <th>Deutsch</th>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
         </tr>
         <tr>
             <td>plusieurs</td>
@@ -385,7 +392,7 @@
         </tr>
         <tr>
             <td>le ciel</td>
-            <td>die Wolke</td>
+            <td>der Himmel</td>
         </tr>
         <tr>
             <td>la lumière</td>
@@ -403,8 +410,8 @@
     <p>LB. S. 184-185</p><br>
     <table>
         <tr>
-            <th>Französisch</th>
-            <th>Deutsch</th>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
         </tr>
         <tr>
             <td>le gladiateur</td>
@@ -482,8 +489,8 @@
     <p>LB. S. 185-186</p><br>
     <table>
         <tr>
-            <th>Französisch</th>
-            <th>Deutsch</th>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
         </tr>
         <tr>
             <td>le concours</td>
@@ -581,8 +588,8 @@
     <p>LB. S. 187-188</p><br>
     <table>
         <tr>
-            <th>Französisch</th>
-            <th>Deutsch</th>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
         </tr>
         <tr>
             <td>Vive ...</td>
@@ -674,9 +681,255 @@
         </tr>
     </table>
   </div>
+
+  <div class="main">
+    <h2>Unité 3 - Volet 1</h2>
+    <p>LB. S. 188-189</p><br>
+    <table>
+        <tr>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
+        </tr>
+        <tr>
+            <td>le coffre</td>
+            <td>der Kofferraum</td>
+        </tr>
+
+        <tr>
+            <td>mal</td>
+            <td>schlecht</td>
+        </tr>
+
+        <tr>
+            <td>dire à qn de</td>
+            <td>jemanden auffordern etwas zu tun, jemandem sagen das er/sie etwas tun soll</td>
+        </tr>
+
+        <tr>
+            <td>demander à qn de</td>
+            <td>jemanden bitten etwas zu tun</td>
+        </tr>
+
+        <tr>
+            <td>arriver à</td>
+            <td>etwas schaffen etwas zu tun</td>
+        </tr>
+
+        <tr>
+            <td>tu en veux</td>
+            <td>Möchtest du (davon)</td>
+        </tr>
+
+        <tr>
+            <td>un oeil, des yeux</td>
+            <td>ein Auge</td>
+        </tr>
+
+        <tr>
+            <td>une expérience</td>
+            <td>eine Erfahrung</td>
+        </tr>
+
+        <tr>
+            <td>avoir l'air</td>
+            <td>aussehen</td>
+        </tr>
+
+        <tr>
+            <td>le progrès</td>
+            <td>der Fortschritt</td>
+        </tr>
+
+        <tr>
+            <td>décider qc/de</td>
+            <td>etwas entscheiden, beschließen etwas zu tun</td>
+        </tr>
+
+        <tr>
+            <td>une expression</td>
+            <td>ein Ausdruck</td>
+        </tr>
+
+        <tr>
+            <td>mot à mot</td>
+            <td>wortwörtlich, Wort für Wort</td>
+        </tr>
+
+        <tr>
+            <td>essayer qc/de</td>
+            <td>etwas versuchen, etwas anprobieren, versuchen etwas zu tun</td>
+        </tr>
+
+        <tr>
+            <td>fatigué/e</td>
+            <td>müde</td>
+        </tr>
+
+        <tr>
+            <td>temir</td>
+            <td>halten, durchhalten</td>
+        </tr>
+
+        <tr>
+            <td>râler contre qn/qc</td>
+            <td>über jemanden/etwas meckern (motzen)</td>
+        </tr>
+
+        <tr>
+            <td>en fait</td>
+            <td>eigentlich, tatsächlich</td>
+        </tr>
+
+        <tr>
+            <td>manquer (à qc)</td>
+            <td>(jemandem) fehlen</td>
+        </tr>
+
+        <tr>
+            <td>savoir qc</td>
+            <td>etwas wissen, etwas können</td>
+        </tr>
+
+        <tr>
+            <td>possible</td>
+            <td>möglich</td>
+        </tr>
+
+        <tr>
+            <td>même si</td>
+            <td>auch wenn, selbst wenn</td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="main">
+    <h2>Unité 3 - Volet 2</h2>
+    <p>LB. S. 187-188</p><br>
+    <table>
+        <tr>
+            <th><button onclick="toggleCover(1)">Französisch</button></th>
+            <th><button onclick="toggleCover(2)">Deutsch</button></th>
+        </tr>
+        <tr>
+            <td>la vie de tous les jours</td>
+            <td>das tägliche Leben, der Alltag</td>
+        </tr>
+
+        <tr>
+            <td>la différence</td>
+            <td>der Unterschied</td>
+        </tr>
+
+        <tr>
+            <td>de manière</td>
+            <td>Auf ... art und Weise</td>
+        </tr>
+
+        <tr>
+            <td>typiquement</td>
+            <td>typisch</td>
+        </tr>
+
+        <tr>
+            <td>environ</td>
+            <td>ungefähr / in etwa</td>
+        </tr>
+
+        <tr>
+            <td>correctement</td>
+            <td>korrekt, richtig</td>
+        </tr>
+
+        <tr>
+            <td>en général</td>
+            <td>im Allgemeinen, normalerweise</td>
+        </tr>
+
+        <tr>
+            <td>c'est pourquoi</td>
+            <td>deshalb / daher</td>
+        </tr>
+
+        <tr>
+            <td>le morceau, le morceaux</td>
+            <td>das Stück</td>
+        </tr>
+
+        <tr>
+            <td>sévérement</td>
+            <td>streng</td>
+        </tr>
+
+        <tr>
+            <td>recommencer</td>
+            <td>wieder anfangen, etwas noch einmal tun</td>
+        </tr>
+
+        <tr>
+            <td>payer (qc)</td>
+            <td>zahlen, (etwas) bezahlen</td>
+        </tr>
+
+        <tr>
+            <td>rapporter qc</td>
+            <td>etwas zurückbringen</td>
+        </tr>
+
+        <tr>
+            <td>réutiliser qc</td>
+            <td>etwas wiederverwenden</td>
+        </tr>
+
+        <tr>
+            <td>garder qc</td>
+            <td>etwas behalten</td>
+        </tr>
+
+        <tr>
+            <td>laver qc</td>
+            <td>etwas waschen, etwas abspühlen</td>
+        </tr>
+
+        <tr>
+            <td>protéger qn/qc</td>
+            <td>jemanden/etwas schützen, jemanden/etwas bewahren</td>
+        </tr>
+
+        <tr>
+            <td>l'environnement</td>
+            <td>die Umwelt</td>
+        </tr>
+        <tr>
+            <td>heureusement</td>
+            <td>glücklicherweise</td>
+        </tr>
+        <tr>
+            <td>autrement</td>
+            <td>anders</td>
+        </tr>
+        <tr>
+            <td>s'énerver</td>
+            <td>sich aufregen</td>
+        </tr>
+        <tr>
+            <td>curieux, curieuse</td>
+            <td>neugierig, merkwürdig</td>
+        </tr>
+    </table>
+  </div>
+</div>
+
+<script>
+function toggleCover(colIndex) {
+    // Wir suchen alle td-Elemente, die an der Position colIndex in ihrer Zeile stehen
+    const cells = document.querySelectorAll(`tbody td:nth-child(${colIndex})`);
+    
+    cells.forEach(td => {
+        td.classList.toggle('covered');
+    });
+}
+</script>
 </body>
-
 </html>
-
 
 
